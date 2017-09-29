@@ -30,8 +30,8 @@ requirements:
 test:
   commands:
     - test -f $PREFIX/include/TeuchosCore_ConfigDefs.hpp
-    - test -f $PREFIX/lib/libteuchoscore.12.10.1.dylib    # [osx]
-    - test -f $PREFIX/lib/libteuchoscore.so.12.10.1       # [linux]
+    - test -f $PREFIX/lib/libteuchoscore.{{ version }}.dylib    # [osx]
+    - test -f $PREFIX/lib/libteuchoscore.so.{{ version }}       # [linux]
 
 about:
   home: https://trilinos.org
